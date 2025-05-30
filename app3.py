@@ -153,3 +153,6 @@ if user_input:
 for message in session_history.messages:
     role = "user" if message.type == "human" else "assistant"
     st.chat_message(role).markdown(message.content)
+
+st.markdown("---")
+st.markdown("<div style='text-align: center; color: gray;'>Created by Priyank 💡</div>", unsafe_allow_html=True)
